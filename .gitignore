@@ -1,0 +1,12 @@
+# Personal data never goes to a shared repo
+input/*
+output/
+work/
+*.pdf
+*.docx
+*.pptx
+!templates/**
+!input/.gitkeep
+
+# per-user profile (copy from templates/profile.template.md)
+profile.md

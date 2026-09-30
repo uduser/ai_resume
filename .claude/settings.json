@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Write(work/**)",
+      "Write(output/**)",
+      "Edit(work/**)",
+      "Edit(output/**)",
+      "Bash(python .claude/skills/resume-extract/scripts/extract.py *)",
+      "Bash(python .claude/skills/resume-export/scripts/md2docx.py *)",
+      "Bash(python .claude/skills/resume-export/scripts/check_style.py *)",
+      "Bash(powershell -NoProfile -ExecutionPolicy Bypass -File .claude/skills/resume-export/scripts/docx2pdf.ps1 *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(wc *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(mkdir *)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push *)"
+    ]
+  }
+}
